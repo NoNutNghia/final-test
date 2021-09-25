@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <div id="input">
+    <table>
+      <tr>
+        <td>ID</td>
+        <td><input type="text" disabled></td>
+      </tr>
+      <tr>
+        <td>Name</td>
+        <td><input type="text" id="name"></td>
+      </tr>
+      <tr>
+        <td>Birthday</td>
+        <td><input type="date" id="birthday"></td>
+      </tr>
+      <tr>
+        <td>Sex</td>
+        <td><input type="radio" name=sex> Male <input type="radio" name=sex> Female </td>
+      </tr>
+      <tr>
+        <td>Subject</td>
+        <td>
+          <input type="checkbox" name="subj"> HTML
+          <input type="checkbox" name="subj"> CSS
+          <input type="checkbox" name="subj"> JS
+          <input type="checkbox" name="subj"> C               
+        </td>
+      </tr>
+    </table>
+
+    <br>
+    <input type="button" value=add onclick="add()">
+       
+  </div>
+  <div>
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>id</th>
+          <th>Name</th>
+          <th>Birthday</th>
+          <th>Sex</th>
+          <th>Subject</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="show"></tbody>
+    </table>
+  </div>
+  <script src="./app.js"></script>
+</body>
+</html>
